@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Test</title>
+	<script type="text/javascript">
+		function draw(){
+			var c = document.getElementById("can");
+			var ctx = c.getContext("2d");
+			ctx.font = "30px Arial";
+			ctx.strokeText("Hallo world!",10,50);
+		}
+	</script>
+</head>
+<body onload="draw()">
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+	<p>This is a paragraph</p>
+	<img src="cart.jpeg" alt="A cart" style="height: 200px; width: 200px">
+	<br>
+	<table style="border: solid 2px; width: 300px">
+		<tr><th>ID</th><th>First Name</th><th>Last Name</th></tr>
+		<tr><td>1</td><td>Ed</td><td>Ap</td></tr>
+		<tr><td>2</td><td>En</td><td>Do</td></tr>
+	</table>
+	<hr>
+	Go to the <a href="https://www.cytonn.com/">Cytonn Web page</a><br><br>
+	<form>
+		Name:<input type="text" name="name"><br>
+		Date:<input type="date" name="today"><br>
+		Comment:<textarea></textarea><br>
+		<input type="submit" name="submit">
+	</form>
+	<br><br>
+	<iframe src= "https://www.youtube.com/watch?v=3GbNkgGd3y0" height="300px">
+	</iframe><br>
+	<canvas id="can" width="200px" height="100px" style="border: solid 1px #ff66ff;">Not supported</canvas><br>
+	<svg width="200" height= "100">
+		<ellipse cx="100" cy="50" rx="90" ry="40" fill="#cc99ff" stroke="#99ff33" stroke-width="2"/>
+	</svg><br>
+	<video controls height="300px">
+		<source src= "mov_bbb.mp4" type= "video/mp4">
+	</video><br>
+	
+</body>
+</html>
